@@ -9,7 +9,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 [![Contribuições Bem-Vindas](https://img.shields.io/badge/Contribui%C3%A7%C3%B5es-Bem%20Vindas-brightgreen)](https://github.com/DeniseCavalcante/Portfolio-dados)
 
-![Imagem Sem Texto](https://raw.githubusercontent.com/DeniseCavalcante/imagens/main/logoGit.jpg)
+<img src="https://raw.githubusercontent.com/DeniseCavalcante/imagens/main/logoGit.jpg" width="300" height="200">
 
 # Portfólio de Projetos em Dados
 
