@@ -23,7 +23,7 @@ Neste repositório, você terá acesso a uma compilação dos projetos que elabo
 
 | Nome do Projeto | Notebook                              | Linguagem | Fonte de Dados | Observação                |
 | ------------------ | --------------------------- | ---------- | -------------- | ------------------------------- |
-| Análise de dados         | [Análise_dados_portifolio.ipynb](analise_dados) | Python     | [Fonte_A](visão_computacional/dados) | O projeto envolveu: 1. Análise descritiva; 2. Análise diagnóstica; 3. Análise preditiva. Além de clusterização de dados. Visando a segmentação da base de dados,em personas com características relevantes. Este estudo de caso foi desenvolvido em 2023 para fins didáticos do curso Data Analytics Certificate da Tera. Portanto, ele mistura elementos fictícios e reais nos dados do negócio.
+| Análise de dados         | [Análise_dados.ipynb](analise_dados) | Python     | [Fonte_A](visão_computacional/dados) | O projeto envolveu: 1. Análise descritiva; 2. Análise diagnóstica; 3. Análise preditiva. Além de clusterização de dados. Visando a segmentação da base de dados,em personas com características relevantes. Este estudo de caso foi desenvolvido em 2023 para fins didáticos do curso Data Analytics Certificate da Tera. Portanto, ele mistura elementos fictícios e reais nos dados do negócio.
 
 ### 2. Visão Computacional e Enriquecimento usando Ontologias Computacionais
 
