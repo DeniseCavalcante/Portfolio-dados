@@ -1,0 +1,59 @@
+@prefix onde: <https://purl.org/purl/ecmi/categorias/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+onde: a skos:ConceptScheme ;
+    dct:title "Esquema de conceitos da categoria locais (ONDE) de representação da imagem em movimento" ;
+    dct:creator "Denise Cavalcante" ;
+    dct:created "2022-06-15"^^xsd:date ;
+    dct:language "pt" ;
+    skos:hasTopConcept onde:praia, onde:brasil, onde:floresta, onde:cidade .
+ 
+onde:brasil a skos:Concept ;
+    skos:prefLabel "Brasil"@pt ;
+    skos:altLabel "BR"@pt ;
+    skos:narrower onde:saopaulo ;
+    skos:note "Conceito mais amplo do gênero país Brasil"@pt ;
+    skos:topConceptOf onde: .
+
+onde:saopaulo a skos:Concept ;
+    skos:prefLabel "São Paulo"@pt ;
+    skos:altLabel "SP"@pt ;
+    skos:broader onde:brasil ;
+    skos:note "Conceito que indica um nome de um estado brasileiro"@pt ;
+    skos:inScheme onde: .
+
+onde:praia a skos:Concept ;
+    skos:prefLabel "Praia"@pt ;
+    skos:prefLabel "Beach"@en ;
+    skos:narrower onde:copacabana ;
+    skos:topConceptOf onde: .
+
+onde:copacabana a skos:Concept ;
+    skos:prefLabel "Copacabana"@pt ;
+    skos:broader onde:praia ;
+    skos:inScheme onde: .
+
+onde:floresta  a skos:Concept ;
+    skos:prefLabel "Floresta"@pt ;
+    skos:narrower onde:amazonia ;
+    skos:topConceptOf onde: .
+
+onde:amazonia a skos:Concept ;
+    skos:prefLabel "Amazonia"@pt ;
+    skos:broader onde:floresta ;
+    skos:inScheme onde: .
+
+onde:cidade a skos:Concept ;
+    skos:prefLabel "Cidade"@pt ;
+    skos:narrower onde:paris ;
+    skos:topConceptOf onde: .
+
+onde:paris a skos:Concept ;
+    skos:prefLabel "paris"@pt ;
+    skos:broader onde:cidade ;
+    skos:inScheme onde: .
+
+

@@ -1,0 +1,87 @@
+
+@prefix onde: <https://purl.org/purl/ecmi/categorias/> .
+@prefix categorias: <https://purl.archive.org/purl/categorias-imagem-movimento#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+categorias: a skos:ConceptScheme ;
+    dc:title "Esquema de conceitos das categorias de representação da imagem em movimento QUEM, QUANDO, ONDE, OQUE" ;
+    dc:creator "Denise Cavalcante" ;
+    dct:created "2022-06-15"^^xsd:date ;
+    skos:hasTopConcept categorias:personagens, categorias:lugar, categorias:evento .
+
+categorias:personagens a skos:Concept ;
+    skos:prefLabel "personagens"@pt ;
+    skos:narrower categorias:adultero, categorias:alcoolatra ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt ;
+    skos:topConceptOf categorias: . 
+
+categorias:adultero a skos:Concept ;
+    skos:prefLabel "adultero"@pt ;
+    skos:broader categorias:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt ;
+    skos:inScheme categorias: .
+
+categorias:alcoolatra a skos:Concept ;
+    skos:prefLabel "alcoólatra"@pt ;
+    skos:broader categorias:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt ;
+    skos:inScheme categorias: .
+
+categorias:pontedasbandeiras a skos:Concept ;
+    skos:prefLabel "Ponte das bandeiras"@pt ;
+    skos:broader categorias:ponte ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt ;
+    skos:inScheme categorias: .
+
+categorias:ponte a skos:Concept ;
+    skos:prefLabel "Ponte"@pt ;
+    skos:narrower categorias:pontedasbandeiras ;
+    skos:inScheme categorias: .
+
+categorias:evento a skos:Concept ;
+    skos:prefLabel "evento"@pt ;
+    skos:narrower categorias:mortedarainha, categorias:morte ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt ;
+    skos:topConceptOf categorias: .
+
+categorias:mortedarainha a skos:Concept ;
+    skos:prefLabel "Morte da rainha"@pt ;
+    skos:broader categorias:evento ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt ;
+    skos:inScheme categorias: .
+
+categorias:morte a skos:Concept ;
+    skos:prefLabel "Morte"@pt ;
+    skos:broader categorias:evento ;
+    skos:inScheme categorias: .
+
+categorias:lugar a skos:Concept ;
+    skos:prefLabel "Lugar"@pt ;
+    skos:narrower categorias:saopaulo, categorias:pais ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt ;
+    skos:topConceptOf categorias: .
+
+categorias:pais a skos:Concept ;
+    skos:prefLabel "País"@pt ;
+    skos:broader categorias:lugar ;
+    skos:inScheme categorias: .
+
+categorias:saopaulo a skos:Conceppt ;
+    skos:prefLabel "Estado de SP"@pt ;
+    skos:broader categorias:lugar ;
+    skos:inScheme categorias: .
+
+onde:brasil a skos:Concept ;
+    skos:prefLabel "Brasil"@pt ;
+    skos:inScheme categorias: .
+
+onde:saopaulo a skos:Concept ;
+    skos:prefLabel "Estado de SP"@pt ;
+    skos:inScheme categorias: .
+
+onde:brasil skos:broadMatch categorias:lugar .
+onde:brasil skos:relatedMatch categorias:pais .
+onde:saopaulo skos:exactMatch categorias:saopaulo .

@@ -1,0 +1,56 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix crim: <http://example.com/OntologiaRepresentacaoImagemMovimento#> .
+
+
+crim:  a owl:Ontology ;
+  dcterms:description "Ontologia categorias de representação da imagem em movimento"@pt ;
+  dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:creator "Denise Cavalcante" ;
+  dcterms:modified "2023-04-01"^^xsd:date ;
+  dcterms:title "Ontologia categorias de representação da imagem em movimento"@pt .
+
+crim:categoria a owl:Class ;
+  rdfs:label "Categorias"@pt .
+
+crim:deGenerico a owl:Class ;
+  rdfs:label "De Generico"@pt .
+
+crim:deEspecifico a owl:Class ;
+  rdfs:label "De Especifico"@pt .
+
+crim:temDeGenerico a owl:ObjectProperty ;
+  rdfs:domain crim:categoria ;
+  rdfs:range crim:deGenerico ;
+  rdfs:label "temDeGenerico"@pt .
+
+crim:temDeEspecifico a owl:ObjectProperty ;
+  rdfs:domain crim:deGenerico ;
+  rdfs:range crim:deEspecifico ;
+  rdfs:label "temDeEspecifico"@pt .
+ 
+crim:pertenceCategoria a owl:ObjectProperty ;
+  rdfs:domain crim:deGenerico ;
+  rdfs:range crim:categoria ;
+  rdfs:label "pertenceCategoria"@pt .
+ 
+crim:valorDeEspecifico a owl:ObjectProperty ;
+  rdfs:domain crim:deEspecifico ;
+  rdfs:range crim:deGenerico ;
+  rdfs:label "valorDeEspecifico"@pt .
+
+crim:quem a crim:categoria ;
+  crim:temDeGenerico crim:ponte ;
+  rdfs:label "quem"@pt .
+
+crim:ponte a crim:deGenerico ;
+  crim:temDeEspecifico crim:ponteDasBandeiras ;
+  rdfs:label "ponte"@pt .
+
+crim:ponteDasBandeiras a crim:deEspecifico ;
+  crim:temDeGenerico crim:ponte ;
+  rdfs:label "ponte Das Bandeiras"@pt .
+

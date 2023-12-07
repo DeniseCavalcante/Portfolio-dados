@@ -1,0 +1,40 @@
+@prefix paises: <https://purl.org/purl/ecmi/categorias2/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+paises: a skos:ConceptScheme ;
+    dct:title "Esquema de conceitos dos países da américa latina" ;
+    dct:creator "Denise Cavalcante" ;
+    dct:created "2022-06-15"^^xsd:date ;
+    dct:language "pt" ;
+    skos:hasTopConcept paises:brasil, paises:chile, paises:uruguai, paises:argentina.
+
+paises:brasil a skos:Concept ;
+    skos:prefLabel "Brasil"@pt ;
+    skos:topConceptOf paises: .
+
+paises:chile a skos:Concept ;
+    skos:prefLabel "Chile"@pt ;
+    skos:topConceptOf paises: .
+
+paises:uruguai a skos:Concept ;
+    skos:prefLabel "Uruguai"@pt ;
+    skos:topConceptOf paises: .
+
+paises:argentina a skos:Concept ;
+    skos:prefLabel "Argentina"@pt ;
+    skos:topConceptOf paises: .
+
+
+
+
+
+
+
+
+
+
+
+

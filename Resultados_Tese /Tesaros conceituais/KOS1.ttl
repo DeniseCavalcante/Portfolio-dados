@@ -1,0 +1,98 @@
+@prefix quem: <https://purl.org/purl/ecmi/categoria-personagens#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+quem: a skos:ConceptScheme ;
+    dct:title "Esquema de conceitos da categoria personagem (QUEM) de representação da imagem em movimento" ;
+    dct:creator "Denise Cavalcante" ;
+    dct:created "2022-06-15"^^xsd:date ;
+    dct:language "pt" ;
+    skos:hasTopConcept quem:personagens .
+
+quem:personagens a skos:Concept ;
+    skos:prefLabel "personagens"@pt ;
+    skos:prefLabel "character"@en ;
+    skos:narrower quem:adultero, quem:alcoolatra, quem:alienigenas, quem:amigos, quem:amnesicos, quem:androides, quem:anoes, quem:aristocratas, quem:assaltantes, quem:assasinos, quem:ativistas ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:topConceptOf quem: . 
+
+quem:adultero a skos:Concept ;
+    skos:prefLabel "adultero"@pt ;
+    skos:prefLabel "adulterer"@en ;
+    skos:altLabel "infiel"@pt;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:alcoolatra a skos:Concept ;
+    skos:prefLabel "alcoólatra"@pt ;
+    skos:prefLabel "alcoholic"@en ;
+    skos:altLabel "alcoolista"@pt ;#
+    skos:hiddenLabel "bebâdo"@pt ;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:alienigenas a skos:Concept ;
+    skos:prefLabel "alienígenas"@pt ;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:amigos a skos:Concept ;
+    skos:prefLabel "amigos"@pt ;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:amnesicos a skos:Concept ;
+    skos:prefLabel "amnésicos"@pt ;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:anoes a skos:Concept ;
+    skos:prefLabel "anões"@pt ;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:aristocratas a skos:Concept ;
+    skos:prefLabel "aristocratas"@pt ;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:assaltantes a skos:Concept ;
+    skos:prefLabel "assaltantes"@pt ;
+    skos:broader quem:personagens ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:assasinos a skos:Concept ;
+    skos:prefLabel "assassinos"@pt ;
+    skos:broader quem:personagens ;
+    skos:closeMatch wd:Q931260 ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:ativistas a skos:Concept ;
+    skos:prefLabel "ativistas"@pt ;
+    skos:broader quem:personagens ;
+    skos:closeMatch wd:Q15253558 ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .
+
+quem:androides a skos:Concept ;
+    skos:prefLabel "androides"@pt ;
+    skos:broader quem:personagens ;
+    skos:closeMatch wd:Q181787 ;
+    skos:note "conceitos retirados do vocabulário da USP"@pt;
+    skos:inScheme quem: .    
+
+
+
+

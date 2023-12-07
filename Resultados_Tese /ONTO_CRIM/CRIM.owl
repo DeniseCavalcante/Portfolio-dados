@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.com/OntologiaRepresentacaoImagemMovimento"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.com/OntologiaRepresentacaoImagemMovimento"
+     versionIRI="http://example.com/OntologiaRepresentacaoImagemMovimento/1.0.0">
+    <Prefix name="" IRI="http://example.com/OntologiaRepresentacaoImagemMovimento"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="crim" IRI="http://example.com/OntologiaRepresentacaoImagemMovimento#"/>
+    <Prefix name="foaf" IRI="&lt;http://xmlns.com/foaf/0.1/&gt;"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Modelo de conhecimento para representar as categorias de representação da imagem em movimento.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Categorias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeEspecifico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeGenerico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dbo:Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#schema:VideoObject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#anotaEspecifico"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#anotaGenerico"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mediaURI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temDeGenerico"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amazonia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andrade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bahia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cidade"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CopaDoMundo94"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Homem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jogo_de_Futebol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marcos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morte_da_rainha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ONDE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OQUE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ponte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ponte_das_Bandeiras"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Primavera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QUANDO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#QUEM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Selva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#decadaSessenta"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#Amazonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#Andrade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#Bahia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeGenerico"/>
+        <NamedIndividual IRI="#Cidade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#CopaDoMundo94"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeGenerico"/>
+        <NamedIndividual IRI="#Homem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeGenerico"/>
+        <NamedIndividual IRI="#Jogo_de_Futebol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#Marcos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeGenerico"/>
+        <NamedIndividual IRI="#Morte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#Morte_da_rainha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Categorias"/>
+        <NamedIndividual IRI="#ONDE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Categorias"/>
+        <NamedIndividual IRI="#OQUE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeGenerico"/>
+        <NamedIndividual IRI="#Ponte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#Ponte_das_Bandeiras"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeGenerico"/>
+        <NamedIndividual IRI="#Primavera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Categorias"/>
+        <NamedIndividual IRI="#QUANDO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Categorias"/>
+        <NamedIndividual IRI="#QUEM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeGenerico"/>
+        <NamedIndividual IRI="#Selva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DeEspecifico"/>
+        <NamedIndividual IRI="#decadaSessenta"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#Amazonia"/>
+        <NamedIndividual IRI="#Selva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#Andrade"/>
+        <NamedIndividual IRI="#Homem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#Bahia"/>
+        <NamedIndividual IRI="#Cidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <NamedIndividual IRI="#Cidade"/>
+        <NamedIndividual IRI="#ONDE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Cidade"/>
+        <NamedIndividual IRI="#Bahia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#CopaDoMundo94"/>
+        <NamedIndividual IRI="#Jogo_de_Futebol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <NamedIndividual IRI="#Homem"/>
+        <NamedIndividual IRI="#QUEM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Homem"/>
+        <NamedIndividual IRI="#Andrade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Homem"/>
+        <NamedIndividual IRI="#Marcos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Jogo_de_Futebol"/>
+        <NamedIndividual IRI="#CopaDoMundo94"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#Marcos"/>
+        <NamedIndividual IRI="#Homem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <NamedIndividual IRI="#Morte"/>
+        <NamedIndividual IRI="#OQUE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Morte"/>
+        <NamedIndividual IRI="#Morte_da_rainha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#Morte_da_rainha"/>
+        <NamedIndividual IRI="#Morte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <NamedIndividual IRI="#ONDE"/>
+        <NamedIndividual IRI="#Cidade"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <NamedIndividual IRI="#ONDE"/>
+        <NamedIndividual IRI="#Selva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <NamedIndividual IRI="#OQUE"/>
+        <NamedIndividual IRI="#Jogo_de_Futebol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <NamedIndividual IRI="#OQUE"/>
+        <NamedIndividual IRI="#Morte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <NamedIndividual IRI="#Ponte"/>
+        <NamedIndividual IRI="#QUEM"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Ponte"/>
+        <NamedIndividual IRI="#Ponte_das_Bandeiras"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#Ponte_das_Bandeiras"/>
+        <NamedIndividual IRI="#Ponte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <NamedIndividual IRI="#Primavera"/>
+        <NamedIndividual IRI="#QUANDO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Primavera"/>
+        <NamedIndividual IRI="#decadaSessenta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <NamedIndividual IRI="#QUANDO"/>
+        <NamedIndividual IRI="#Primavera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <NamedIndividual IRI="#QUEM"/>
+        <NamedIndividual IRI="#Homem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <NamedIndividual IRI="#QUEM"/>
+        <NamedIndividual IRI="#Ponte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <NamedIndividual IRI="#Selva"/>
+        <NamedIndividual IRI="#ONDE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <NamedIndividual IRI="#Selva"/>
+        <NamedIndividual IRI="#Amazonia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <NamedIndividual IRI="#decadaSessenta"/>
+        <NamedIndividual IRI="#Primavera"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <ObjectProperty IRI="#temDeGenerico"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#anotaEspecifico"/>
+        <Class IRI="#DeGenerico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mediaURI"/>
+        <Class IRI="#dbo:Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <Class IRI="#DeGenerico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <Class IRI="#DeGenerico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <Class IRI="#Categorias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <Class IRI="#DeEspecifico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#anotaEspecifico"/>
+        <Class IRI="#DeEspecifico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#anotaGenerico"/>
+        <Class IRI="#DeGenerico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mediaURI"/>
+        <Class IRI="#schema:VideoObject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pertenceCategoria"/>
+        <Class IRI="#Categorias"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temDeEspecifico"/>
+        <Class IRI="#DeEspecifico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temDeGenerico"/>
+        <Class IRI="#DeGenerico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#valorDeEspecifico"/>
+        <Class IRI="#DeGenerico"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Amazonia</IRI>
+        <Literal xml:lang="pt">Conceito representando um nome de lugar geográfico, arquitetônico ou cosmográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Amazonia</IRI>
+        <Literal xml:lang="pt">Amazonia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Andrade</IRI>
+        <Literal xml:lang="pt">Conceito representando especificamente de quem se trata a imagem. Responde as perguntas: esta imagem é de quem? De que objetos? De que seres?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Andrade</IRI>
+        <Literal xml:lang="pt">Andrade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bahia</IRI>
+        <Literal xml:lang="pt">Conceito representando um nome de lugar geográfico, arquitetônico ou cosmográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bahia</IRI>
+        <Literal xml:lang="pt">Salvador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Categorias</IRI>
+        <Literal xml:lang="pt">Categorias de representação da imagem em movimento QUEM, QUANDO, ONDE, O QUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Categorias</IRI>
+        <Literal xml:lang="pt">Categorias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cidade</IRI>
+        <Literal xml:lang="pt">Conceito representando um tipo de lugar geográfico, arquitetônico ou cosmográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cidade</IRI>
+        <Literal xml:lang="pt">Cidade</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CopaDoMundo94</IRI>
+        <Literal xml:lang="pt">Conceito que define eventos individualmente nomeados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CopaDoMundo94</IRI>
+        <Literal xml:lang="pt">CopaDoMundo94</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeEspecifico</IRI>
+        <Literal xml:lang="pt">Nível de determinação De Específico para representação da imagem em movimento repondendo a pergunta ﻿A IMAGEM É DE QUE? ﻿(SHATFORD, 1986, p. 43). Além disso, representa o nível iconografico ﻿(PANOFSKY, 1979, p. 48).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeEspecifico</IRI>
+        <Literal xml:lang="pt">De Específico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeGenerico</IRI>
+        <Literal xml:lang="pt">Nível de determinação De Genérico para representação da imagem em movimento repondendo a pergunta ﻿A IMAGEM É DE QUE? ﻿(SHATFORD, 1986, p. 43). Além disso, representa o nível pré-iconografico ﻿(PANOFSKY, 1979, p. 48).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeGenerico</IRI>
+        <Literal xml:lang="pt">De Genérico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Homem</IRI>
+        <Literal xml:lang="pt">Conceito representando animado ou inanimado, objetos e seres concretos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Homem</IRI>
+        <Literal xml:lang="pt">Homem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jogo_de_Futebol</IRI>
+        <Literal xml:lang="pt">Conceito que define ações, eventos e emoções.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Jogo_de_Futebol</IRI>
+        <Literal xml:lang="pt">JogoDeFutebol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Marcos</IRI>
+        <Literal xml:lang="pt">Conceito representando especificamente de quem se trata a imagem. Responde as perguntas: esta imagem é de quem? De que objetos? De que seres?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Marcos</IRI>
+        <Literal xml:lang="pt">Marcos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Morte</IRI>
+        <Literal xml:lang="pt">Conceito que define ações, eventos e emoções.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Morte</IRI>
+        <Literal xml:lang="pt">Morte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Morte_da_rainha</IRI>
+        <Literal xml:lang="pt">Conceito que define eventos individualmente nomeados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Morte_da_rainha</IRI>
+        <Literal xml:lang="pt">MorteDaRainha</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ONDE</IRI>
+        <Literal xml:lang="pt">Localização da imagem no &quot;espaço&quot;: espaço geográfico ou espaço da imagem (p. ex. São Paulo ou interior de danceteria). Fonte: (SMIT, 1996)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ONDE</IRI>
+        <Literal xml:lang="pt">ONDE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OQUE</IRI>
+        <Literal xml:lang="pt">Descrição de &quot;atitudes&quot; ou &quot;detalhes&quot; relacionados ao &quot;objeto enfocado&quot;, quando este é um ser vivo (p.ex cavalo correndo, criança trajando roupa do século XVIII). Define ações, eventos e emoções.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OQUE</IRI>
+        <Literal xml:lang="pt">OQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ponte</IRI>
+        <Literal xml:lang="pt">Conceito representando animados ou inanimado, objetos e seres concretos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ponte</IRI>
+        <Literal xml:lang="pt">Ponte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ponte_das_Bandeiras</IRI>
+        <Literal xml:lang="pt">Conceito representando especificamente de quem se trata a imagem. Responde as perguntas: esta imagem é de quem? De que objetos? De que seres?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ponte_das_Bandeiras</IRI>
+        <Literal xml:lang="pt">PonteDasBandeiras</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Primavera</IRI>
+        <Literal xml:lang="pt">Conceito representando o tempo cíclico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Primavera</IRI>
+        <Literal xml:lang="pt">Primavera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QUANDO</IRI>
+        <Literal xml:lang="pt">Localização da imagem no &quot;tempo&quot;: tempo cronológico ou momento da imagem (p.ex. 1996, noite, verão). Define o tempo linear ou cíclico, datas, períodos específicos, tempos recorrentes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QUANDO</IRI>
+        <Literal xml:lang="pt">QUANDO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QUEM</IRI>
+        <Literal xml:lang="pt">Identificação do &quot;objeto enfocado&quot;: seres vivos, artefatos, construções, acidentes naturais, etc. Define animado e inanimado, objetos e seres concretos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QUEM</IRI>
+        <Literal xml:lang="pt">QUEM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Selva</IRI>
+        <Literal xml:lang="pt">Conceito representando um tipo de lugar geográfico, arquitetônico ou cosmográfico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Selva</IRI>
+        <Literal xml:lang="pt">Selva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#decadaSessenta</IRI>
+        <Literal xml:lang="pt">Conceito representando o tempo linear.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#decadaSessenta</IRI>
+        <Literal xml:lang="pt">DecadaDeSessenta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pertenceCategoria</IRI>
+        <Literal xml:lang="pt">Esta propriedade de objeto conecta as instâncias da classe De Genérico com as instâncias da classe Categorias.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pertenceCategoria</IRI>
+        <Literal xml:lang="pt">pertenceCategoria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temDeEspecifico</IRI>
+        <Literal xml:lang="pt">Esta propriedade de objeto é usada para associar as instâncias da classe De Genérico subordinadas a classe De Específico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temDeEspecifico</IRI>
+        <Literal xml:lang="pt">temDeEspecifico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temDeGenerico</IRI>
+        <Literal xml:lang="pt">Esta propriedade de objeto é usada para associar as instâncias da classe Categorias subordinadas a classe De Genérico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temDeGenerico</IRI>
+        <Literal xml:lang="pt">temDeGenerico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#valorDeEspecifico</IRI>
+        <Literal xml:lang="pt">Esta propriedade de objeto conecta as instâncias da classe De Específico com as instâncias da classe De Genérico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#valorDeEspecifico</IRI>
+        <Literal xml:lang="pt">valorDeEspecifico</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
