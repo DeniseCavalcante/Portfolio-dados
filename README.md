@@ -11,14 +11,13 @@ Neste repositório, você terá acesso a uma compilação dos projetos que elabo
 | Nome do Projeto | Notebook                              | Linguagem | Fonte de Dados | Observação                |
 | --------------- | ------------------------------------- | ---------- | -------------- | ------------------------- |
 | Análise de dados        | [Análise_dados_portifolio.ipynb](analise_dados) | Python     | [Fonte_A](analise_dados/dados/Base de dados_fluentAcademy_ portifolio.xlsx) | Porjeta de análise de dados com pandas   |
-| Projeto B        | [Projeto_B.ipynb](link_para_o_projeto) | Python     | [Fonte_B](link_para_fonte) | Descrição do projeto B.   |
 
 ### 2. Visão Computacional e Enriquecimento usando Ontologias Computacionais
 
 | Nome do Projeto | Notebook                              | Linguagem | Fonte de Dados | Observação                |
 | --------------- | ------------------------------------- | ---------- | -------------- | ------------------------- |
-| Projeto C        | [Projeto_C.ipynb](link_para_o_projeto) | Python     | [Fonte_C](link_para_fonte) | Descrição do projeto C.   |
-| Projeto D        | [Projeto_D.ipynb](link_para_o_projeto) | Python     | [Fonte_D](link_para_fonte) | Descrição do projeto D.   |
+| Visão computacional        | [yolo_opencv_owl.ipynb](visão_computacional) | Python     | [Fonte_B](visão_computacional/dados) | Projeto explorou a visão computacional para extrair informações valiosas de imagens, juntamente com a aplicação de ontologias computacionais para aprimorar a compreensão e interpretação dessas informações.   |
+| Modelagem semântica        | [crim.owl](Resultados_Tese ) | Python/OWL    | [Fonte_c](link_para_fonte) | Resultados da pesquisa aplicada na tese acadêmica para o título de doutorado.   |
 
 ## Como Contribuir
 Se você encontrar erros, tiver sugestões ou quiser contribuir para algum projeto, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*. Seu feedback é muito bem-vindo!
