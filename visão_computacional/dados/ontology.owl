@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:ns1="https://purl.archive.org/purl/categorias-imagem-movimento#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#categoria">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#quem">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#categoria"/>
+    <ns1:temDeGenerico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#SerBio"/>
+    <rdfs:label>Quem</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#SerBio">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deGenerico"/>
+    <ns1:temDeEspecifico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#pessoa"/>
+    <ns1:pertenceCategoria rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#quem"/>
+    <rdfs:label>Ser biologico</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#onibus">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deEspecifico"/>
+    <ns1:valorDeEspecifico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#veiculo"/>
+    <rdfs:label>Onibus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#valorDeEspecifico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deEspecifico"/>
+    <rdfs:range rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deGenerico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#pessoa">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deEspecifico"/>
+    <ns1:valorDeEspecifico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#SerBio"/>
+    <rdfs:label>Pessoa</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#bicicleta">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deEspecifico"/>
+    <ns1:valorDeEspecifico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#veiculo"/>
+    <rdfs:label>Bicicleta</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#temDeEspecifico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deGenerico"/>
+    <rdfs:range rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deEspecifico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Ontologia de categorias de representação da imagem em movimento</rdfs:comment>
+    <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <dc:creator>Denise Cavalcante</dc:creator>
+    <dcterms:modified rdf:resource="2023-04-01"/>
+    <dcterms:title>Ontologia de categorias de representação da imagem em movimento</dcterms:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#veiculo">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deGenerico"/>
+    <ns1:temDeEspecifico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#carro"/>
+    <ns1:temDeEspecifico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#bicicleta"/>
+    <ns1:pertenceCategoria rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#oque"/>
+    <rdfs:label>Veiculo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#temDeGenerico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#categoria"/>
+    <rdfs:range rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deGenerico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#oque">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#categoria"/>
+    <ns1:temDeGenerico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#veiculo"/>
+    <rdfs:label>O que</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#deGenerico">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#pertenceCategoria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deGenerico"/>
+    <rdfs:range rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#categoria"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#deEspecifico">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://purl.archive.org/purl/categorias-imagem-movimento#carro">
+    <rdf:type rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#deEspecifico"/>
+    <ns1:valorDeEspecifico rdf:resource="https://purl.archive.org/purl/categorias-imagem-movimento#veiculo"/>
+    <rdfs:label>Carro</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
