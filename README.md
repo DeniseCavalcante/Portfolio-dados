@@ -23,19 +23,19 @@ Neste repositório, você terá acesso a uma compilação dos projetos que elabo
 
 | Nome do Projeto | Notebook                              | Linguagem | Fonte de Dados | Observação                |
 | --------------- | ------------------------------------- | ---------- | -------------- | ------------------------- |
-| Análise de dados        | [Análise_dados_portifolio.ipynb](analise_dados) | Python     | [Fonte_A](analise_dados/dados/Base de dados_fluentAcademy_ portifolio.xlsx) | Porjeta de análise de dados com pandas   |
+| Análise de dados        | [Análise_dados_portifolio.ipynb](analise_dados) | Python     | [Fonte_A](visão_computacional/dados) | O projeto envolveu: 1. Análise descritiva; 2. Análise diagnóstica; 3. Análise preditiva. Além de clusterização de dados. Visando a segmentação da base de dados,
+em personas com características relevantes. Este estudo de caso foi desenvolvido em 2023 para fins didáticos do curso Data Analytics Certificate da Tera. Portanto, ele mistura elementos fictícios e reais nos dados do negócio.
 
 ### 2. Visão Computacional e Enriquecimento usando Ontologias Computacionais
 
 | Nome do Projeto | Notebook                              | Linguagem | Fonte de Dados | Observação                |
 | --------------- | ------------------------------------- | ---------- | -------------- | ------------------------- |
 | Visão computacional        | [yolo_opencv_owl.ipynb](visão_computacional) | Python     | [Fonte_B](visão_computacional/dados) | Projeto explorou a visão computacional para extrair informações valiosas de imagens, juntamente com a aplicação de ontologias computacionais para aprimorar a compreensão e interpretação dessas informações.   |
-| Modelagem semântica        | [crim.owl](Resultados_Tese ) | Python/OWL    | [Fonte_c](link_para_fonte) | Resultados da pesquisa aplicada na tese acadêmica para o título de doutorado.   |
-
+| Modelagem semântica        | [crim.owl](Resultados_Tese ) | Python/OWL    | [Fonte_c](link_para_fonte) | Resultados da pesquisa aplicada na tese acadêmica para o título de doutorado, qe explorou a semântica formal e o uso de dados inteligiveis para humanos e máquinas.   |
 
 # Colaboradora
 
-Dra. Denise Cavalcante é Doutora em Ciência da Informação pela Universidade de São Paulo (USP). Confira mais sobre sua trajetória e contribuições nos seguintes perfis:
+Denise Cavalcante é Doutora em Ciência da Informação pela Universidade de São Paulo (USP). Confira mais sobre sua trajetória e contribuições nos seguintes perfis:
 
 - [Currículo Lattes](link_para_lattes)
 - [LinkedIn](link_para_linkedin)
